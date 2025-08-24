@@ -1,3 +1,8 @@
+# 100 Days of DevOps
+
+This repository documents my **100 Days of DevOps** learning challenge. Each day focuses on a practical DevOps/Linux task, starting from Linux fundamentals and user management, and gradually moving into advanced topics like containerization, CI/CD pipelines, cloud infrastructure, automation, and monitoring. The goal is to **learn by doing**, track daily progress, and create a public portfolio of DevOps skills.
+
+
 ## Learning Roadmap
 - Days 1–10: Linux fundamentals, user management, SSH hardening  
 - Days 11–20: Git, GitHub, version control, CI/CD basics  
@@ -28,3 +33,5 @@ Each `dayXX` folder contains:
 ## Connect
 - LinkedIn: https://www.linkedin.com/in/pramudith-jayasekara-aa75661a2/  
 - GitHub: https://github.com/Pramu-99
+
+
