@@ -1,0 +1,9 @@
+yum install -y iptables-services
+systemctl restart iptables && systemctl status iptables
+iptables -A INPUT -p tcp --destination-port 5004 -s 172.16.238.14 -j ACCEPT
+iptables -A INPUT -p tcp --destination-port 5004 -j DROP
+iptables -L --line-numbers
+iptables -R INPUT 5 -p icmp -j REJECT
+iptables -L -n
+service iptables save
+systemctl restart iptables && systemctl status iptables 
