@@ -81,6 +81,4 @@ The remote branch has been updated with the rewritten history.
 
 ---
 
-## 📄 Downloadable File
-This document is created as a markdown file: **task32_git_rebase_documentation.md**
 
