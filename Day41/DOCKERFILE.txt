@@ -1,0 +1,12 @@
+#Install apache2 on Ubuntu 24.04 Container and Open Port 3003 on the Container
+
+
+FROM ubuntu:24.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y apache2 && \
+    apt-get clean
+RUN sed -i 's/Listen 80/Listen 3003/' /etc/apache2/ports.conf && \
+    sed -i 's/<VirtualHost \*:80>/<VirtualHost *:3003>/' /etc/apache2/sites-available/000-default.conf
+EXPOSE 3003
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
