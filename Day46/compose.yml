@@ -1,0 +1,25 @@
+#Created by Pramudith Jayasekara | github - Pramu-99
+
+version: '3.8'
+
+services:
+  web:
+    container_name: php_blog
+    image: php:apache
+    ports:
+      - "5004:80"
+    volumes:
+      - /var/www/html:/var/www/html
+
+  db:
+    container_name: mysql_blog
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: database_blog
+      MYSQL_USER: blog_user
+      MYSQL_PASSWORD: Passblog@123
+      MYSQL_ROOT_PASSWORD: RootPassBlog@99
