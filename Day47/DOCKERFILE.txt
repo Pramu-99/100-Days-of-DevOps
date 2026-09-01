@@ -1,0 +1,20 @@
+#importing python base image
+FROM python:3.9-slim
+
+#setting working directory
+WORKDIR /app
+
+#copying requirements.txt file
+COPY src/requirements.txt .
+
+#installing dependecies
+RUN pip install --no-cache-dir -r requirements.txt
+
+#copying source code
+COPY src/ .
+
+#expose port 5003
+EXPOSE 5003
+
+#running the application using CMD
+CMD ["python","server.py"]
