@@ -1,4 +1,5 @@
-## Day 48 - Create and Run Pod in Kubernetes 📌 Task
+## Day 48 - Create and Run Pod in Kubernetes 
+📌 Task
 
 Create a Pod definition for an httpd container and apply it on the cluster. Verify that the Pod is running and accessible.
 
